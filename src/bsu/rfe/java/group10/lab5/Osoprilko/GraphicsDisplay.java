@@ -273,7 +273,6 @@ import javax.swing.JPanel;
                 labelPos = this.translateXYtoPoint(this.viewport[1][0], 0.0D);
                 canvas.drawString("x", (float)(labelPos.x - bounds.getWidth() - 10.0D), (float)(labelPos.y - bounds.getHeight() / 2.0D));
             }
-
         }
 
         protected java.awt.geom.Point2D.Double translateXYtoPoint(double x, double y) {
@@ -322,10 +321,8 @@ import javax.swing.JPanel;
                     } else {
                         GraphicsDisplay.this.zoomToRegion(GraphicsDisplay.this.minX, GraphicsDisplay.this.maxY, GraphicsDisplay.this.maxX, GraphicsDisplay.this.minY);
                     }
-
                     GraphicsDisplay.this.repaint();
                 }
-
             }
 
             public void mousePressed(MouseEvent ev) {
@@ -340,7 +337,6 @@ import javax.swing.JPanel;
                         GraphicsDisplay.this.setCursor(Cursor.getPredefinedCursor(5));
                         GraphicsDisplay.this.selectionRect.setFrame((double)ev.getX(), (double)ev.getY(), 1.0D, 1.0D);
                     }
-
                 }
             }
 
@@ -357,7 +353,6 @@ import javax.swing.JPanel;
                         GraphicsDisplay.this.zoomToRegion(GraphicsDisplay.this.originalPoint[0], GraphicsDisplay.this.originalPoint[1], finalPoint[0], finalPoint[1]);
                         GraphicsDisplay.this.repaint();
                     }
-
                 }
             }
         }
@@ -405,7 +400,6 @@ import javax.swing.JPanel;
                     GraphicsDisplay.this.selectionRect.setFrame(GraphicsDisplay.this.selectionRect.getX(), GraphicsDisplay.this.selectionRect.getY(), width, height);
                     GraphicsDisplay.this.repaint();
                 }
-
             }
         }
     }
